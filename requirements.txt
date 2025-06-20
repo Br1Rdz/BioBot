@@ -1,0 +1,13 @@
+langchain_chroma
+google-ai-generativelanguage
+google-api-core
+google-generativeai
+langchain
+langchain-community
+langchain-core
+langchain-google-genai
+langchain-text-splitters
+PyMuPDF
+SQLAlchemy
+pysqlite3-binary
+streamlit==1.38.0
