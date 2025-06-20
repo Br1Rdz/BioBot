@@ -10,3 +10,4 @@ pydantic==1.10.13
 chroma-hnswlib==0.7.6
 chromadb==0.5.18
 langchain-chroma==0.1.4
+rich>=10.14.0,<14
