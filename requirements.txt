@@ -1,7 +1,4 @@
-chroma-hnswlib==0.7.6
-chromadb==0.5.18
 langchain==0.3.13
-langchain-chroma==0.1.4
 langchain-community==0.3.13
 langchain-core==0.3.28
 langchain-google-genai==2.0.7
