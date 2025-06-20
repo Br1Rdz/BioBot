@@ -27,7 +27,7 @@ llm = ChatGoogleGenerativeAI(
 )
 
 # Ruta de database
-persist_directory = 'FCB_recursive_db/'
+persist_directory = './FCB_recursive_db/'
 
 # #embeddins
 embed_model = OllamaEmbeddings(model="nomic-embed-text")
