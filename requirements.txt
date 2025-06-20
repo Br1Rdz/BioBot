@@ -7,4 +7,4 @@ langchain-google-genai==2.0.7
 SQLAlchemy==2.0.36
 pysqlite3-binary
 streamlit==1.38.0
-chromadb==0.4.24
+chromadb
