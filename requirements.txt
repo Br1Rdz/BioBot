@@ -10,4 +10,17 @@ langchain-text-splitters
 PyMuPDF
 SQLAlchemy
 pysqlite3-binary
+st-annotated-text
+st-theme
 streamlit==1.38.0
+streamlit-aggrid
+streamlit-camera-input-live
+streamlit-card
+streamlit-embedcode
+streamlit-extras
+streamlit-faker
+streamlit-image-coordinates
+streamlit-keyup
+streamlit-option-menu
+streamlit-toggle-switch
+streamlit-vertical-slider
