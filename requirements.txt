@@ -25,4 +25,3 @@ streamlit-option-menu
 streamlit-toggle-switch
 streamlit-vertical-slider
 chromadb==0.5.18
-pysqlite3
