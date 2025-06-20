@@ -10,9 +10,8 @@ from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers import EnsembleRetriever
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os
-
-__import__('pysqlite3')
 import sys
+__import__('pysqlite3')
 
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
