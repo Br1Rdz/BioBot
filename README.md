@@ -14,6 +14,6 @@
 > 4. ESPERO DISFRUTES LA APP
 
 > [!WARNING]
-> <div align="justify">Las respuestas generadas por el modelo de lenguaje (LLM) pueden contener un tono sarcástico o irónico, diseñado intencionalmente para hacer más amena la interacción. Te pedimos que lo tomes con humor y paciencia, recordando que el objetivo principal es facilitar la comprensión del contenido de los reglamentos de forma accesible y entretenida.</div>
+> <div align="justify">Las respuestas generadas por el modelo de lenguaje (LLM) pueden contener un tono sarcástico o irónico, implementado intencionalmente para hacer más amena la interacción. Te pedimos que lo tomes con humor y paciencia, recordando que el objetivo principal es facilitar la comprensión del contenido de los reglamentos de forma accesible y entretenida.</div>
 
 <h3 align='center'; font-size: 25px; color: white;'>✨Gracias por tu apoyo✨</h1>
