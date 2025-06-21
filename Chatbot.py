@@ -47,17 +47,17 @@ vectordb = FAISS.load_local(
 # #Recuperacion de los embeddings
 retriever_mmr = vectordb.as_retriever(
                 search_type="mmr",
-                search_kwargs={"k":20, "fetch_k":60, "lambda_mult": 0.75})
+                search_kwargs={"k":30, "fetch_k":60, "lambda_mult": 0.75})
                 # search_kwargs = {'k':20})
 
 retriever_similarity = vectordb.as_retriever(
                 search_type="similarity",
-                search_kwargs={"k":10}) 
+                search_kwargs={"k":20}) 
 
 ensemble_retriever = EnsembleRetriever(retrievers = [ retriever_mmr , retriever_similarity],
                                        weights = [0.55, 0.45])
 # https://github.com/langchain-ai/langchain/issues/31192
-_filter = LLMListwiseRerank.from_llm(llm, top_n = 10)
+_filter = LLMListwiseRerank.from_llm(llm, top_n = 5)
 
 compression_retriever = ContextualCompressionRetriever(
     base_compressor = _filter, base_retriever = ensemble_retriever
