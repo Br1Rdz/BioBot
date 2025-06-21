@@ -9,4 +9,4 @@ langchain-chroma
 chroma-hnswlib
 SQLAlchemy
 pysqlite3-binary
-SQLite4
+sqlite3 >= 3.35.0
