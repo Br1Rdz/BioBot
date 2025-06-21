@@ -11,13 +11,10 @@ from langchain.retrievers import EnsembleRetriever
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os
 import sys
-# __import__('pysqlite3')
-
-# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-
+import sqlite3
+__import__('pysqlite3')
 import sys
-import pysqlite3
-sys.modules["sqlite3"] = pysqlite3
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 #key de Google
 if "GOOGLE_API_KEY" not in os.environ:
