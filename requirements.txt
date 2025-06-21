@@ -8,3 +8,4 @@ langchain-chroma
 chroma-hnswlib
 chromadb==0.5.18
 pysqlite3-binary>=0.5.2
+SQLAlchemy
