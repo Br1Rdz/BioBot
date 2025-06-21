@@ -3,7 +3,7 @@ langchain==0.1.16
 langchain-community==0.0.33
 langchain-core==0.1.52
 langchain-google-genai==0.0.7
-langchain-ollama==0.1.4
+langchain-ollama
 chromadb==0.5.18
 langchain-chroma==0.1.4
 chroma-hnswlib==0.7.6
