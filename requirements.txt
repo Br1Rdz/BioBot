@@ -8,3 +8,4 @@ chromadb
 langchain-chroma
 chroma-hnswlib
 SQLAlchemy
+pysqlite3-binary
