@@ -9,3 +9,4 @@ langchain-google-genai
 SQLAlchemy
 pysqlite3-binary
 faiss-cpu
+langchain-ollama
