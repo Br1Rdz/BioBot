@@ -4,9 +4,8 @@ langchain-community
 langchain-core
 langchain-google-genai
 langchain-ollama
-chromadb
 langchain-chroma
 chroma-hnswlib
 SQLAlchemy
-pysqlite3-binary
-sqlite3 >= 3.35.0
+chromadb==0.5.18
+pysqlite3-binary>=0.5.2
