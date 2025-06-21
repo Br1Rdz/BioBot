@@ -32,7 +32,7 @@ llm = ChatGoogleGenerativeAI(
 
 # #embeddins
 # embed_model = OllamaEmbeddings(model="nomic-embed-text")
-embed_model = GoogleGenerativeAIEmbeddings(model="models/embedding-001",  task_type="RETRIEVAL_QUERY")
+embed_model = GoogleGenerativeAIEmbeddings(model="models/embedding-001",  task_type="retrieval_document")
 # vectorstore
 # vectordb = Chroma(embedding_function = embed_model,
 #                      persist_directory = persist_directory)
