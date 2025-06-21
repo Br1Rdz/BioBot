@@ -1,5 +1,5 @@
 import streamlit as st 
-from langchain_chroma import Chroma
+# from langchain_chroma import Chroma
 # from langchain_community.vectorstores import Chroma
 from langchain.prompts import PromptTemplate
 from langchain_ollama import OllamaEmbeddings
@@ -9,6 +9,7 @@ from langchain.retrievers.document_compressors import LLMListwiseRerank
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers import EnsembleRetriever
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_community.vectorstores import FAISS
 import os
 import sys
 __import__('pysqlite3')
@@ -26,14 +27,21 @@ llm = ChatGoogleGenerativeAI(
 )
 
 # Ruta de database
-persist_directory = './FCB_recursive_db/'
+# persist_directory = './FCB_recursive_db/'
 
 # #embeddins
 embed_model = OllamaEmbeddings(model="nomic-embed-text")
 
 # vectorstore
-vectordb = Chroma(embedding_function = embed_model,
-                     persist_directory = persist_directory)
+# vectordb = Chroma(embedding_function = embed_model,
+#                      persist_directory = persist_directory)
+
+vectordb = FAISS.load_local(
+     "./FCB_faiss_db/", 
+     embed_model, 
+    allow_dangerous_deserialization = True
+ )
+
 
 # #Recuperacion de los embeddings
 retriever_mmr = vectordb.as_retriever(
