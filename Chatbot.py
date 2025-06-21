@@ -24,7 +24,7 @@ if "GOOGLE_API_KEY" not in os.environ:
 #Configurar modelo de Gemini
 llm = ChatGoogleGenerativeAI(
     model = "gemini-2.0-flash-exp",
-    temperature = 0
+    temperature = 0.1
 )
 
 # Ruta de database
@@ -32,7 +32,7 @@ llm = ChatGoogleGenerativeAI(
 
 # #embeddins
 # embed_model = OllamaEmbeddings(model="nomic-embed-text")
-embed_model = GoogleGenerativeAIEmbeddings(model="models/embedding-001", task_type="retrieval_query")
+embed_model = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-exp-03-07", task_type="RETRIEVAL_DOCUMENT")
 # vectorstore
 # vectordb = Chroma(embedding_function = embed_model,
 #                      persist_directory = persist_directory)
