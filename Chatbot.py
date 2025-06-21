@@ -57,7 +57,7 @@ retriever_similarity = vectordb.as_retriever(
 ensemble_retriever = EnsembleRetriever(retrievers = [ retriever_mmr , retriever_similarity],
                                        weights = [0.55, 0.45])
 # https://github.com/langchain-ai/langchain/issues/31192
-_filter = LLMListwiseRerank.from_llm(llm, top_n = 3)
+_filter = LLMListwiseRerank.from_llm(llm, top_n = 10)
 
 compression_retriever = ContextualCompressionRetriever(
     base_compressor = _filter, base_retriever = ensemble_retriever
