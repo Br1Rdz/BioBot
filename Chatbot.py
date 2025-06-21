@@ -12,11 +12,10 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 import os
 import sys
 # import sqlite3
-
-import pysqlite3 as sqlite3
-__import__('pysqlite3')
+import pysqlite3
 import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+import sqlite3
 
 #key de Google
 if "GOOGLE_API_KEY" not in os.environ:
