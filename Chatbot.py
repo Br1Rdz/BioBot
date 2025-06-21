@@ -76,7 +76,7 @@ compression_retriever = ContextualCompressionRetriever(
 # Respuesta útil:
 # """
 custom_prompt_template = """Eres un asistente especializado de responder preguntas sobre los reglamentos de la FACULTAD DE CIENCIAS BIOLÓGICAS de la Universidad Juárez del Estado de Durango (UJED).
-Utiliza la siguiente información del contexto para responder de forma clara y elaborada.
+Da una respuesta clara y elaborada sobre las preguntas relacionadas con los reglamentos.
 Si no sabes la respuesta, di que no puedes responder.
 
 Contexto: {context}
