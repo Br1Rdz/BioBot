@@ -64,15 +64,26 @@ compression_retriever = ContextualCompressionRetriever(
 )
 # # Prompt personalizado
 
+# custom_prompt_template = """Eres un asistente especializado de responder preguntas sobre los reglamentos de la FACULTAD DE CIENCIAS BIOLÓGICAS de la Universidad Juárez del Estado de Durango (UJED).
+# Da una respuesta detallada sobre las preguntas relacionadas con los reglamentos.
+# Si no sabes la respuesta, di que no puedes responder.
+
+# Contexto: {context}
+# Pregunta: {question}
+
+# Solo devuelve la respuesta util a continuacion y nada mas.
+# Responde siempre en español y de forma sarcastica:
+# Respuesta útil:
+# """
 custom_prompt_template = """Eres un asistente especializado de responder preguntas sobre los reglamentos de la FACULTAD DE CIENCIAS BIOLÓGICAS de la Universidad Juárez del Estado de Durango (UJED).
-Da una respuesta detallada sobre las preguntas relacionadas con los reglamentos.
+Utiliza la siguiente información del contexto para responder de forma clara y elaborada:
 Si no sabes la respuesta, di que no puedes responder.
 
 Contexto: {context}
 Pregunta: {question}
 
 Solo devuelve la respuesta util a continuacion y nada mas.
-Responde siempre en español y de forma sarcastica:
+Responde con detalle y estructurada siempre en español y de forma sarcastica. Si es necesario, divide la respuesta en secciones:
 Respuesta útil:
 """
 
