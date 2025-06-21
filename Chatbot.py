@@ -118,7 +118,7 @@ def modify_output(input):
 st.set_page_config(page_title="BioBot",
                    page_icon="🦾",
                    layout="centered",
-                   initial_sidebar_state = "auto",
+                   initial_sidebar_state = "expanded",
                    menu_items=None)
 
 st.markdown("<h1 style='text-align: center; color: white; font-family:serif;'>🧬BioBot🤖</h1>", unsafe_allow_html=True)
