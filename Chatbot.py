@@ -9,6 +9,7 @@ from langchain.retrievers.document_compressors import LLMListwiseRerank
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers import EnsembleRetriever
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
 import os
 import sys
@@ -30,8 +31,8 @@ llm = ChatGoogleGenerativeAI(
 # persist_directory = './FCB_recursive_db/'
 
 # #embeddins
-embed_model = OllamaEmbeddings(model="nomic-embed-text")
-
+# embed_model = OllamaEmbeddings(model="nomic-embed-text")
+embed_model = GoogleGenerativeAIEmbeddings(model="models/embedding-001", task_type="retrieval_query")
 # vectorstore
 # vectordb = Chroma(embedding_function = embed_model,
 #                      persist_directory = persist_directory)
