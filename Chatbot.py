@@ -83,7 +83,7 @@ Contexto: {context}
 Pregunta: {question}
 
 Solo devuelve la respuesta util a continuacion y nada mas.
-Responde con detalle y estructurada siempre en español y de forma sarcastica. Si es necesario, divide la respuesta en secciones:
+Responde siempre en español y de forma sarcastica:
 Respuesta útil:
 """
 
