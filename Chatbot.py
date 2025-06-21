@@ -47,12 +47,12 @@ vectordb = FAISS.load_local(
 # #Recuperacion de los embeddings
 retriever_mmr = vectordb.as_retriever(
                 search_type="mmr",
-                search_kwargs={"k":30, "fetch_k":60, "lambda_mult": 0.75})
+                search_kwargs={"k":20, "fetch_k":60, "lambda_mult": 0.75})
                 # search_kwargs = {'k':20})
 
 retriever_similarity = vectordb.as_retriever(
                 search_type="similarity",
-                search_kwargs={"k":20}) 
+                search_kwargs={"k":10}) 
 
 ensemble_retriever = EnsembleRetriever(retrievers = [ retriever_mmr , retriever_similarity],
                                        weights = [0.55, 0.45])
